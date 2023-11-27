@@ -54,7 +54,7 @@ class TransactionServiceTest {
     void testTransactionSaveWithCustomerNotExist() {
         TransactionTO transactionTO = new TransactionTO();
         transactionTO.setTransactionValue(120);
-        transactionTO.setCustomerId(1L);
+        transactionTO.setCustomerId(9899L);
 
         Assertions.assertThrows(TransactionException.class, () -> transactionService.saveTransaction(transactionTO));
     }
